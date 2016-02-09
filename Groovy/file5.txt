@@ -1,5 +1,0 @@
-		1: This is file1
-3: This is 
-file3
-5: This is line5
-7: This is line7

@@ -1,8 +1,0 @@
-This is file1
-This is file2
-This is file3
-This is line4
-This is line5
-This is line6
-This is line7
-This is line8
