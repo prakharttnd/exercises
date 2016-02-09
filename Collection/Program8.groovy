@@ -25,7 +25,7 @@ println list.findAll{            //Return name of all employees whose salary is 
     (it.salary < 5000)
 }
 
-println list.findAll{
+/*println list.findAll{
     it.age == list*.age.max()        //Return all the oldest employee in the company
 }
     
@@ -36,6 +36,9 @@ println list.findAll{
 println list.findAll{
     it.salary == list*.salary.max()        //Return all the employee with max slaary in the company
 }
-
+*/
 println list*.name                        //Return the list of name of all employees
 
+println list.max{it.age}.name	// Returns oldest employee name
+
+println list.min{it.age}.name	// Returns youngest employee name
