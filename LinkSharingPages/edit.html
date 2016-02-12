@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.form-horizontal .form-group .control-label{
+			text-align: left;
+		}
+	</style>
+</head>
+<body style="margin-top: 15px;">
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="col-xs-5"><a style="color: blue; font-size: 20px;" href="#"><u>Link Sharing</u></a></div>
+				<div class="col-xs-1"></div>
+				<div class="col-xs-4 left-inner-addon">
+					<form>
+						<div class="form-group has-feedback has-feedback-left">
+							<input type="text" class="form-control" placeholder="Search" style="border-radius: 20px;" />
+							<i class="glyphicon glyphicon-remove-sign form-control-feedback"></i>
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-2">
+					<i class="fa fa-user" style="float: right; font-size: 20px;">&nbsp;&nbsp;
+						<a href="#" style="font-size: 14px;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prakhar <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</i>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<img src="image.jpg" class="img-rounded" height="100px;" width="100px;" alt="dp" style="float: left;">
+					<div style="margin-left: 100px;" >
+						<div class="col-sm-12">
+							<strong>Prakhar Agrawal</strong>
+							<br>
+							<span class="text-muted">@prakhar</span>
+							<br><br>
+						</div>
+						<div class="col-md-6">
+							<span class="text-muted">Subscriptions</span>
+							<br>
+							<span style="color: blue;">50</span>
+						</div>
+						<div class="col-md-6">
+							<span class="text-muted">Topics</span>
+							<br>
+							<span style="color: blue;">30</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Topics</div>
+				<div class="panel-body">
+					<div class="row">
+						<img src="image.jpg" class="img-rounded" height="70px;" width="70px;" alt="dp" style="float: left; margin-left: 20px;">
+						<div style="margin-left: 90px;">
+							<div class="col-sm-12">
+								<strong><a href="#"><u>Grails</u></a></strong>
+								<br><br>
+							</div>
+							<div class="col-md-4">
+								<span class="text-muted">@prakhar</span>
+							</div>
+							<div class="col-md-4">
+								<span class="text-muted">Subscriptions</span>
+								<br>
+								<span style="color: blue;">50</span>
+							</div>
+							<div class="col-md-4">
+								<span class="text-muted">Post</span>
+								<br>
+								<span style="color: blue;">30</span>
+							</div>
+						</div>
+						<div class="col-sm-1"></div>
+						<div class="col-sm-4">
+							<select class="form-control">
+								<option>Serious</option>
+								<option>Not Serious</option>
+								<option>Take it easy</option>
+							</select>
+						</div>
+						<div class="col-sm-4">
+							<select class="form-control">
+								<option>Private</option>
+								<option>Public</option>
+								<option>Custom</option>
+							</select>
+						</div>
+						<div class="col-sm-3">
+							<i class="fa fa-envelope-o" style="font-size: 20px;" data-toggle="modal" data-target="#sendTopicInvitationModal"></i>&nbsp;
+							<i class="fa fa-pencil-square-o" style="font-size: 20px;"></i>&nbsp;
+							<i class="glyphicon glyphicon-trash" style="font-size: 20px;"></i>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-heading">Profile</div>
+				<div class="panel-body">
+					<form class="form-horizontal" id="login-form">
+						<div class="form-group">
+							<label class="control-label col-sm-5" for="fname">First Name *</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="fname" value="Prakhar">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-5" for="lname">Last Name *</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="lname" value="Agrawal">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-5" for="uname">Username *</label>
+							<div class="col-sm-7">
+								<input type="text" class="form-control" id="uname" value="prakhar">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-5" for="photo">Photo</label>
+							<div class="col-sm-7">
+								<input type="file" class="form-control" id="photo">
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default btn-xs active" style="float: right; width: 125px;">Update</button>
+					</form>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Change Password</div>
+				<div class="panel-body">
+					<form class="form-horizontal" id="login-form">
+						<div class="form-group">
+							<label class="control-label col-sm-5" for="pwd">Password *</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="pwd">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-5" for="cpwd">Confirm Password *</label>
+							<div class="col-sm-7">
+								<input type="password" class="form-control" id="cpwd">
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default btn-xs active" style="float: right; width: 125px;">Update</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+						<p>Body of the Modal</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="createTopicModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Create Topic</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="name">Name *:</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="vis">Visibilty *:</label>
+								<div class="col-sm-8">
+									<select id="vis" class="form-control">
+										<option>Private</option>
+										<option>Public</option>
+										<option>Custom</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-default btn-xs active" style="width: 125px; margin-left: 310px;">Save</button>
+							<button type="exit" class="btn btn-default btn-xs active" style="width: 125px; float: right;">Cancel</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sendInvitationModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Send Invitation</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="email">Email *:</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="topic">Topic *:</label>
+								<div class="col-sm-8">
+									<select id="topic" class="form-control">
+										<option>Topic</option>
+										<option>Grails</option>
+										<option>Mean</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-default btn-xs active" style="width: 125px; margin-left: 310px;">Invite</button>
+							<button type="exit" class="btn btn-default btn-xs active" style="width: 125px; float: right;">Cancel</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="shareLinkModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Share Link</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="link">Link *:</label>
+								<div class="col-sm-8">
+									<input type="url" class="form-control" id="link">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="desc">Description *:</label>
+								<div class="col-sm-8">
+									<textarea class="form-control" id="desc" rows="7"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="topic">Topic *:</label>
+								<div class="col-sm-8">
+									<select id="topic" class="form-control">
+										<option>Topic</option>
+										<option>Grails</option>
+										<option>Mean</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-default btn-xs active" style="width: 125px; margin-left: 310px;">Share</button>
+							<button type="exit" class="btn btn-default btn-xs active" style="width: 125px; float: right;">Cancel</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="shareDocumentModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Share Link</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="doc">Document *:</label>
+								<div class="col-sm-8">
+									<input type="file" class="form-control" id="doc">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="desc">Description *:</label>
+								<div class="col-sm-8">
+									<textarea class="form-control" id="desc" rows="7"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="topic">Topic *:</label>
+								<div class="col-sm-8">
+									<select id="topic" class="form-control">
+										<option>Topic</option>
+										<option>Grails</option>
+										<option>Mean</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-default btn-xs active" style="width: 125px; margin-left: 310px;">Share</button>
+							<button type="exit" class="btn btn-default btn-xs active" style="width: 125px; float: right;">Cancel</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sendTopicInvitationModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Send Invitation</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="email">Email *:</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="topic">Topic *:</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="email" value="Grails" disabled="disabled">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-default btn-xs active" style="width: 125px; margin-left: 310px;">Invite</button>
+							<button type="exit" class="btn btn-default btn-xs active" style="width: 125px; float: right;">Cancel</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

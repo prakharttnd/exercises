@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.form-horizontal .form-group .control-label{
+			text-align: left;
+		}
+	</style>
+</head>
+<body style="margin-top: 15px;">
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="col-xs-5"><a style="color: blue; font-size: 20px;" href="#"><u>Link Sharing</u></a></div>
+				<div class="col-xs-4 left-inner-addon">
+					<form>
+						<div class="form-group has-feedback has-feedback-left">
+							<input type="text" class="form-control" placeholder="Search" style="border-radius: 20px;" />
+							<i class="glyphicon glyphicon-remove-sign form-control-feedback"></i>
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-3">
+					<i class="fa fa-comment" style="font-size: 20px;" data-toggle="modal" data-target="#createTopicModal"></i>&nbsp;&nbsp;
+					<i class="fa fa-envelope-o" style="font-size: 20px;" data-toggle="modal" data-target="#sendInvitationModal"></i>&nbsp;&nbsp;
+					<i class="glyphicon glyphicon-link" style="font-size: 20px;" data-toggle="modal" data-target="#shareLinkModal"></i>&nbsp;&nbsp;
+					<i class="fa fa-file-o" style="font-size: 20px;" data-toggle="modal" data-target="#shareDocumentModal"></i>
+					<i class="fa fa-user" style="float: right; font-size: 20px;">&nbsp;&nbsp;
+						<a href="#" style="font-size: 14px;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prakhar <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</i>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="image.jpg" class="img-rounded" height="100px;" width="100px;" alt="dp" style="float: left; margin-left: 20px;">
+						</div>
+						<div class="col-md-9">
+							<div class="col-md-4">
+								<span>Prakhar Agrawal</span>
+								<br>
+								<span class="text-muted">@prakhar</span>
+							</div>
+							<div class="col-md-3">
+							</div>
+							<div class="col-md-5">
+								<a href="#">Grails</a>
+								<br>
+								<span class="text-muted">2:45 PM 22 FEB 2016</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin: 10px;">
+						<p>Lorem ipsum dolor sit amet, consectular adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis Lorem ipsum dolor sit amet, consectular adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis Lorem ipsum dolor sit amet, consectular adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis Lorem ipsum dolor sit amet, consectular adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis</p>
+					</div>
+					<div class="row" style="margin: 10px;">
+						<div class="col-md-3">
+							<a href="http://www.facebook.com"><i class="fa fa-facebook-official" style="color: blue; font-size: 20px;"></i></a>&nbsp;&nbsp;
+							<a href="http://www.tumblr.com"><i class="fa fa-tumblr" style="color: black; font-size: 20px;"></i></a>&nbsp;&nbsp;
+							<a href="http://www.google.com"><i class="fa fa-google-plus" style="color: red; font-size: 20px;"></i></a>
+						</div>
+						<div class="col-md-3"></div>
+						<div class="col-md-6" style="float: right;">
+							<a href="#"><u>Delete</u></a>
+							&nbsp;&nbsp;
+							<a href="#"><u>Edit</u></a>
+							&nbsp;&nbsp;
+							<a href="#"><u>Download</u></a>
+							&nbsp;&nbsp;
+							<a href="#"><u>View full site</u></a>
+						</div>
+					</div>
+
+						<!-- <div style="margin-left: 120px;">
+							<div class="col-md-4">
+								<span><strong>Prakhar Agrawal</strong></span>
+							</div>
+							<div class="col-md-5">
+								<span class="text-muted">@prakhar 5min</span>
+							</div>
+							<div class="col-md-3">
+								<a href="#">Grails</a>
+							</div>
+							<div class="col-xs-12">
+								<p>Lorem ipsum dolor sit amet, consectular adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis</p>
+							</div>
+							<div class="col-sm-9">
+								<a href="http://www.facebook.com"><i class="fa fa-facebook-official" style="color: blue; font-size: 20px;"></i></a>&nbsp;&nbsp;
+								<a href="http://www.tumblr.com"><i class="fa fa-tumblr" style="color: black; font-size: 20px;"></i></a>&nbsp;&nbsp;
+								<a href="http://www.google.com"><i class="fa fa-google-plus" style="color: red; font-size: 20px;"></i></a>
+							</div>
+							<div class="col-sm-3">
+								<a href="#"><u>View post</u></a>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">Trending topics</div>
+					<div class="panel-body">
+						<div class="row" style="border-bottom: 1px solid #ddd;">
+							<img src="image.jpg" class="img-rounded" height="70px;" width="70px;" alt="dp" style="float: left; margin-left: 20px;">
+							<div style="margin-left: 90px;">
+								<div class="col-sm-12">Prakhar Agrawal
+									<strong style="float: right;"><a href="#"><u>Grails</u></a></strong>
+									<br><br>
+								</div>
+								<div class="col-md-4">
+									<span class="text-muted">@prakhar</span>
+									<br>
+									<a href="#"><u>Subscribe</u></a>
+								</div>
+								<div class="col-md-4">
+									<span class="text-muted">Subscriptions</span>
+									<br>
+									<span style="color: blue;">50</span>
+								</div>
+								<div class="col-md-4">
+									<span class="text-muted">Post</span>
+									<br>
+									<span style="color: blue;">30</span>
+									<br>
+									<br>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<img src="image.jpg" class="img-rounded" height="70px;" width="70px;" alt="dp" style="float: left; margin-left: 20px;">
+							<div style="margin-left: 90px;">
+								<div class="col-sm-12">Prakhar Agrawal
+									<strong style="float: right;"><a href="#"><u>Grails</u></a></strong>
+									<br><br>
+								</div>
+								<div class="col-md-4">
+									<span class="text-muted">@prakhar</span>
+									<br>
+									<a href="#"><u>Unsubscribe</u></a>
+								</div>
+								<div class="col-md-4">
+									<span class="text-muted">Subscriptions</span>
+									<br>
+									<span style="color: blue;">50</span>
+								</div>
+								<div class="col-md-4">
+									<span class="text-muted">Post</span>
+									<br>
+									<span style="color: blue;">30</span>
+								</div>
+							</div>
+							<div class="col-sm-1"></div>
+							<div class="col-sm-4">
+								<select class="form-control">
+									<option>Serious</option>
+									<option>Not Serious</option>
+									<option>Take it easy</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<select class="form-control">
+									<option>Private</option>
+									<option>Public</option>
+									<option>Custom</option>
+								</select>
+							</div>
+							<div class="col-sm-3">
+								<u><a href="#">Edit</a></u> &nbsp;&nbsp;
+								<u><a href="#">Delete</a></u>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
+
+
+
